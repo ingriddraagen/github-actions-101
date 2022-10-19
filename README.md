@@ -62,6 +62,7 @@ name: "Hello Actions!"
 
 on:
   workflow_dispatch:
+  push:
 
 jobs:
   say-hello:
@@ -71,8 +72,6 @@ jobs:
         run: "echo 'Hei på deg GitHub Actions!'"
       - name: "Echo Goodnight"
         run: "echo 'Natta!'"
-      - name: "Echo halla Ingrid"
-        run: "echo 'Halla Ingrid! How u doin?'"
 ```
 
 [YAML](https://en.wikipedia.org/wiki/YAML)-koden over, definerer en workflow med navnet "Hello Actions!". Den er satt opp til å trigge (`on:`) når en av to eventer skjer: Enten hvis workflowen blir startet manuelt fra grensesnittet til GitHub (`workflow_dispatch:`), eller hvis det pushes en commit til koderepoet (`push:`).
