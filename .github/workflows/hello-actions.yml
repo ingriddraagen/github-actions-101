@@ -12,4 +12,4 @@ jobs:
       - name: "Echo Goodnight"
         run: "echo 'Natta!'"
       - name: "Echo halla Ingrid"
-      run: "echo 'Halla Ingrid! How u doin?'"
+        run: "echo 'Halla Ingrid! How u doin?'"
